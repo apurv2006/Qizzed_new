@@ -1,6 +1,5 @@
 server.js
 const express = require("express");
-const createHandler = require("azure-function-express").createHandler;
 const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -99,4 +98,4 @@ app.get("/api/stats/:quizId", authMiddleware, async (req,res)=>{
 
 
 // EXPORT handler for Azure Functions
-module.exports = createHandler(app);
+module.exports = app;
