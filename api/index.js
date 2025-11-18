@@ -1,4 +1,5 @@
-const createAzureFunctionHandler = require("@azure/functions-server").createHandler;
+// api/index.js
+const createHandler = require("azure-function-express").createHandler;
 const app = require("./server");
 
-module.exports = createAzureFunctionHandler(app);
+module.exports = createHandler(app);
