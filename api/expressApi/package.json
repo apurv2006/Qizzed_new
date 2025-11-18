@@ -2,12 +2,13 @@
   "name": "express-api",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "commonjs",
   "dependencies": {
     "@azure/functions": "^4.0.0",
     "express": "^4.18.2",
     "mongoose": "^7.8.7",
     "cors": "^2.8.5",
-    "body-parser": "^1.20.3",
+    "body-parser": "^1.20.2",
     "bcrypt": "^5.1.1",
     "jsonwebtoken": "^9.0.2"
   }
