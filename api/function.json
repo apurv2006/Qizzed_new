@@ -5,8 +5,14 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "route": "{*route}",
-      "methods": ["get", "post", "put", "delete", "options"]
+      "methods": [
+        "get",
+        "post",
+        "put",
+        "delete",
+        "options"
+      ],
+      "route": "api/{*route}"
     },
     {
       "type": "http",
@@ -15,3 +21,4 @@
     }
   ]
 }
+
